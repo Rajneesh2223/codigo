@@ -1,0 +1,43 @@
+.first {
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+    width: 100%;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+   
+  }
+  
+  .second {
+    font-size: 4rem;
+    --o: 0;
+    --y: 70px;
+    animation: fade-in 1.95s cubic-bezier(0.2, 1, 0.3, 1) 0.2s 1 normal backwards running;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+   
+  }
+  .para{
+    --o: 0;
+--y: 70px;
+animation: 1.95s cubic-bezier(0.2, 1, 0.3, 1) 0.2s 1 normal backwards running fade-in;
+line-height: 1.5;
+animation-delay: 0.5s;
+max-width: 40rem;
+
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(var(--y));
+    }
+    to {
+      opacity: 1;
+      transform: translateY(var(--o));
+    }
+  }
+  
